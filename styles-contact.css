@@ -61,35 +61,34 @@ html, body
     width: 100%;
     padding: 0;
     margin: 0;
-    background: url(images/BricksBG.jpg) center center fixed no-repeat;
+    background: url(images/shadow-BG.jpg) center center fixed no-repeat;
     background-size: cover;
     }
 
 .center 
     {
-    width: 800px;
+    width: 60%;
 	padding: 2%;
     margin: 100px auto;
- 	background: rgba(0, 150, 178, .75); /*this uses opacity of 75% for the background color*/
+ 	background: rgba(235, 210, 187, .75); /*this uses opacity of 75% for the background color*/
 	text-align: center;
-	border: 4px dashed white;
     }
 
    
 #logo 
     {
-    margin-bottom: 16px;
-	border: 3px dashed red;
+    margin: 16px;
 	text-align: center;
     }
 
 h1  
     {
 	/* FONT-FAMILY GOES HERE CHOOSE FROM ADOBE FONTS OR GOOGLE FONTS */
-	font-family: eloquent-jf-small-caps-pro,serif;
-    font-weight: 400;
+	font-family: monarcha,serif;
+    font-weight: 300;
     font-style: normal;
-    font-size: 2.0em;
+    font-size: 1.5em;
+    color: #fcfcf4;
     }
 
 h2  
@@ -98,7 +97,8 @@ h2
 	font-family: roc-grotesk, sans-serif;
     font-weight: 600;
     font-style: normal;
-    font-size: 1.6em;
+    color: #fcfcf4;
+    font-size: 1.2em;
     padding: 0px 0px;
     margin: 0px auto 25px auto;
     }
@@ -109,9 +109,9 @@ p
     font-family: roc-grotesk, sans-serif;
     font-weight: 300;
     font-style: normal;
-	font-size: 1.2em;
+	font-size: 1.0em;
     line-height: 1.6;
-    color: #fff;
+    color: #fcfcf4;
     }
 
 nav 
@@ -121,10 +121,8 @@ nav
     font-style: normal;
     font-size: 1.2em;
     line-height: 1.6;
-    color: #ffffff;
+    color: #fcfcf4;
     margin: 0 auto;
-    border: dashed turquoise;
-    border-width: 3px 0;
     text-align: center;
     margin-top: 2em;
     }
@@ -142,13 +140,11 @@ nav a
     
 a
     {
-    color: #444;
+    color: #fcfcf4;
     text-decoration: none;
-    font-weight: bold;
     }
 
 a:hover
     {
-    color: black;
-    background: pink;   
+    color: #a55500;   
     }
