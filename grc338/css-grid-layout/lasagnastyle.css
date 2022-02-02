@@ -8,7 +8,7 @@ img {
 }
 
 body {
-	background-color: #FAFDFF;
+	background-color: #DCDCDC;
 }
 
 div.container {
@@ -45,7 +45,7 @@ h3 { /*orange all caps*/
     font-weight: 300;  
     font-style: normal; 
 	color: #FF8A36;
-	margin: 0.5em 0.5em 0.5em 1.5em;
+	margin: 0.5em 0.5em 0.5em 1.25em;
 	text-transform: uppercase;
 	letter-spacing: .1em;
 }
@@ -84,6 +84,45 @@ p {
     font-style: normal; 
 }
 
+@media only screen and (min-width: 60em) {  
 
+
+div.container {  
+    max-width: 75em;  
+    margin: auto;  
+}  
+
+
+header {  
+    padding-top: 4em;  
+}  
+
+
+figure {  
+    display: grid;  
+    grid-template-columns: 80% auto;  
+    column-gap: 0.25em;  
+}  
+
+
+main {  
+    display: grid;  
+    grid-template-columns: repeat(2, 1fr);  
+    column-gap: 1em;  
+    padding: 2.5em;  
+}  
+
+
+figcaption {  
+    padding: 2em;  
+}  
+
+
+h3 {  
+    border-top: 0.15em solid #FF8A36;  
+    padding-top: 1em;  
+}
+
+}
 
 /*By the way, when we use the slash-asterisk combo, it’s a comment on the CSS and it’s meant for human beings. The machine knows it is not supposed to process anything until it finds a asterisk-slash combo that ends the comment on the CSS. */
