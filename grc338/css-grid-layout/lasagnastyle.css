@@ -100,7 +100,7 @@ header {
 
 figure {  
     display: grid;  
-    grid-template-columns: 80% auto;  
+    grid-template-columns: 4fr 1fr;  
     column-gap: 0.25em;  
 }  
 
