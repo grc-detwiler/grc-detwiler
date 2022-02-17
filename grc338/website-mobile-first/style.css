@@ -1,0 +1,130 @@
+/*CSS DOCUMENT*/
+
+
+body{
+    background-color: #FFFBF6;
+    color: #262421;
+}
+header{
+    background-color: #B6359A;
+    color: #FFFBF6;
+    padding: 2em;
+}
+
+h1{
+    font-family: termina,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    
+}
+
+h2{
+    font-family: termina,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+h3{
+    font-family: termina,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    margin-top: 2em;
+}
+
+h4{
+    font-family: termina,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #E57D37;
+    padding-bottom: 0em;
+}
+
+h5{
+    font-family: termina,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    margin-bottom: -0.5em;  
+}
+
+h6{
+    
+}
+
+p, figcaption, address {
+    font-family: termina, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.75em;
+}
+
+.price{
+    color: #E57D37;
+    margin-bottom: 1em;
+}
+
+ul li{
+    list-style: none;
+}
+
+ul li h4, p{
+    margin-bottom: -0.5em;
+}
+
+figure{
+    width: 100%;
+    margin-left: auto;
+}
+
+figcaption{
+    text-align: center;
+}
+
+ul{
+    margin-left: -2em;
+}
+
+nav{
+    margin-left: -2em;
+}
+
+nav ul li{
+    display: inline;
+    font-family: termina, sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+}
+
+nav ul li a{
+    padding: 0.1em 0.25em 0.1em 0.25em;
+    border: 1px solid #FFFBF6;
+    border-radius: 5px;
+}
+
+a:link, a:visited {
+    color: #FFFBF6;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #FFFBF6;
+    color: #B6359A;
+}
+
+a:active {
+  color: #262421;
+} 
+
+img {
+    width: 100%;
+}
+
+header h1{
+    margin-left: -.7em;
+}
+
+footer{
+    background-color:#B6359A;
+    color: #FFFBF6;
+    padding: 1em;
+    margin-top: 3em;
+}
