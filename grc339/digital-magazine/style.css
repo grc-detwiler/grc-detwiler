@@ -1,0 +1,155 @@
+/*CSS document*/
+
+body {
+    background-color: #f2ece5;
+
+}
+
+div.container {
+    max-width: 50em;
+    margin: auto;
+}
+
+figure {
+    margin: 1rem 0;
+}
+
+nav ul li a img {
+    max-width: 25%;
+}
+
+.teaser-main {
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid;
+    border-color:#8f8981;
+}
+
+
+.teaser-main img {
+    width: 100%;
+    max-height: 20rem;
+    object-fit: cover;
+    object-position: 0 -25;
+}
+
+.teaser-image{
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid;
+    border-color:#8f8981;
+}
+
+.teaser-image img {
+    width: 100%;
+    max-height: 8rem;
+    object-fit: cover;
+    object-position: 0 -25;
+}
+
+.teaser-plain {
+    margin: 1rem;
+    padding: 1rem;
+    background-color:#8f8981;
+}
+
+.teaser-plain h3, .teaser-plain h4, .teaser-plain p {
+    color:#f2ece5;
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    font-family: magneta, serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+h4 {
+    font-family: magneta, serif;
+    font-weight: 200;
+    font-style: normal;
+    color:#8f8981;
+    text-transform: lowercase;
+}
+
+p {
+    font-family: articulat-cf,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 1rem;
+    color:#8f8981;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #8f8981;
+    font-family: articulat-cf,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: lowercase;
+    margin: 0.5rem 1rem;
+    letter-spacing: 1.5px;
+}
+
+nav ul li {
+    display: block;
+    margin: 0.2rem;
+}
+
+nav {
+    padding: 0.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+} 
+
+a:hover {
+    color: black;
+} 
+
+article figure{
+    margin: 3rem 1rem;
+}
+
+article img{
+    width: 100%;
+    max-height: 30rem;
+    object-fit: cover;
+    object-position: 0 -25;
+    margin: auto;
+}
+
+article figure figcaption {
+    font-family: magneta, serif;
+    font-weight: 500;
+    font-style: italic;
+    color:#8f8981;
+    text-align: right;
+    margin-left: 50%;
+}
+
+.inline-image img{
+    width: 100%;
+    max-height: 100%;
+}
+
+footer {
+    margin-top: 5rem;
+    border-top: 1px solid;
+    border-color:#8f8981;
+}
+
+footer p {
+    font-family: magneta, serif;
+    font-weight: 500;
+    font-style: italic;
+    color:#8f8981;
+    text-align: right;
+}
