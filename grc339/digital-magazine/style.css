@@ -1,91 +1,87 @@
 /*CSS document*/
-
 body {
     background-color: #f2ece5;
-
-}
-
-div.container {
-    max-width: 50em;
+    }
+    .container {
     margin: auto;
-}
-
-figure {
+    max-width: 80vw;
+    }
+    .container-article{
+    margin: auto;
+    max-width: 50rem;
+    }
+    article {
+    padding: 3rem;
+    }
+    article p {
+    line-height: 1.75rem;
+    }
+    figure {
     margin: 1rem 0;
-}
-
-nav ul li a img {
-    max-width: 25%;
-}
-
-.teaser-main {
+    }
+    nav ul li a img {
+    width: 15%;
+    min-width: 8rem;
+    }
+    .teaser-main {
     margin: 1rem;
-    padding: 1rem;
-    border: 1px solid;
-    border-color:#8f8981;
-}
-
-
-.teaser-main img {
+    padding: 2rem 3rem;
+    background-color: #fff;
+    border-radius: 5px;
+    }
+    .teaser-main img {
     width: 100%;
     max-height: 20rem;
+    border-radius: 5px;
     object-fit: cover;
     object-position: 0 -25;
-}
-
-.teaser-image{
+    }
+    .teaser-image{
     margin: 1rem;
-    padding: 1rem;
-    border: 1px solid;
-    border-color:#8f8981;
-}
-
-.teaser-image img {
+    padding: 1rem 2rem;
+    background-color: #fff;
+    border-radius: 5px;
+    }
+    .teaser-image img {
     width: 100%;
     max-height: 8rem;
+    border-radius: 5px;
     object-fit: cover;
     object-position: 0 -25;
-}
-
-.teaser-plain {
+    }
+    .teaser-plain {
     margin: 1rem;
     padding: 1rem;
-    background-color:#8f8981;
-}
-
-.teaser-plain h3, .teaser-plain h4, .teaser-plain p {
+    border-radius: 5px;
+    background-color:#bab0a4;
+    }
+    .teaser-plain h3, .teaser-plain h4, .teaser-plain p {
     color:#f2ece5;
-}
-
-
-ul {
+    }
+    ul {
     list-style-type: none;
     padding: 0;
-}
-
-h1, h2, h3 {
+    }
+    h1, h2, h3 {
     font-family: magneta, serif;
     font-weight: 700;
     font-style: italic;
-}
-
-h4 {
+    }
+    h4 {
     font-family: magneta, serif;
     font-weight: 200;
     font-style: normal;
     color:#8f8981;
     text-transform: lowercase;
-}
-
-p {
+    }
+    p {
     font-family: articulat-cf,sans-serif;
     font-weight: 400;
     font-style: normal;
     margin: 1rem;
     color:#8f8981;
-}
-
-nav ul li a{
+    }
+    nav ul li a{
     text-decoration: none;
     color: #8f8981;
     font-family: articulat-cf,sans-serif;
@@ -93,63 +89,97 @@ nav ul li a{
     font-style: normal;
     text-transform: lowercase;
     margin: 0.5rem 1rem;
-    letter-spacing: 1.5px;
-}
-
-nav ul li {
+    letter-spacing: 0.05rem;
+    }
+    nav ul li {
     display: block;
     margin: 0.2rem;
-}
-
-nav {
+    }
+    nav {
     padding: 0.5rem;
-}
-
-a {
+    }
+    a {
     text-decoration: none;
-    color: black;
-} 
-
-a:hover {
-    color: black;
-} 
-
-article figure{
+    color: #000;
+    } 
+    a:hover {
+    color: #000;
+    } 
+    article figure{
     margin: 3rem 1rem;
-}
-
-article img{
+    }
+    article img{
     width: 100%;
     max-height: 30rem;
     object-fit: cover;
     object-position: 0 -25;
     margin: auto;
-}
-
-article figure figcaption {
+    }
+    article figure figcaption {
     font-family: magneta, serif;
     font-weight: 500;
     font-style: italic;
     color:#8f8981;
     text-align: right;
     margin-left: 50%;
-}
-
-.inline-image img{
-    width: 100%;
-    max-height: 100%;
-}
-
-footer {
+    }
+    .inline-image img{
+    max-width: 100%;
+    max-height: 50vh;
+    }
+    footer {
     margin-top: 5rem;
     border-top: 1px solid;
     border-color:#8f8981;
-}
-
-footer p {
+    }
+    footer p {
     font-family: magneta, serif;
     font-weight: 500;
     font-style: italic;
     color:#8f8981;
     text-align: right;
+    }
+@media screen and (min-width:50rem) {           /* 50REM RESPONSIVE: NAV INLINE & SUBGRID */
+    .container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto 2fr 1fr auto;
+    } 
+    header{
+    grid-row: 1/2;
+    grid-column: 1/6;
+    }
+    main{
+    grid-row: 2/4;
+    grid-column: 1/6;
+    }
+    .subgrid2x2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    }
+    footer{
+    grid-column: 1/6;
+    }
+    header nav ul {                 /* NAV INLINE */
+    display: inline-flex;
+    flex-wrap: wrap;
+    }
+    aside {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column: 1/6;
+    }
 }
+@media screen and (min-width: 90rem) {      /* 90REM RESPONSIVE: ASIDE */
+    main{
+    grid-row-start: 2; grid-row-end: 4;
+    grid-column-start: 1; grid-column-end: 5;
+    }
+    aside{
+    display:block;
+    grid-row-start: 2; grid-row-end: 4;
+    grid-column-start: 5; grid-column-end: 6;
+    }
+}
+    
