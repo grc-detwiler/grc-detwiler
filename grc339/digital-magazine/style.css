@@ -6,13 +6,19 @@ body {
     margin: auto;
     max-width: 80vw;
     }
-    .container-article{
-    margin: auto;
-    max-width: 50rem;
+
+    .main-story {
+        background-color: #fff;
+        border-radius: 5px;
+        margin: auto;
+        padding: 1rem 2rem;
     }
+
     article {
-    padding: 3rem;
+        margin: auto;
+        max-width: 30rem;
     }
+
     article p {
     line-height: 1.75rem;
     }
@@ -24,7 +30,7 @@ body {
     min-width: 8rem;
     }
     .teaser-main {
-    margin: 1rem;
+    margin: 1rem 0;
     padding: 2rem 3rem;
     background-color: #fff;
     border-radius: 5px;
@@ -36,8 +42,17 @@ body {
     object-fit: cover;
     object-position: 0 -25;
     }
+
+    .teaser-main p, .teaser-image p{
+        border-left: 1px solid #8f8981;
+    }
+
+    .teaser-plain p {
+        border-left: 1px solid #f2ece5;
+    }
+
     .teaser-image{
-    margin: 1rem;
+    margin: 1rem 0;
     padding: 1rem 2rem;
     background-color: #fff;
     border-radius: 5px;
@@ -50,8 +65,8 @@ body {
     object-position: 0 -25;
     }
     .teaser-plain {
-    margin: 1rem;
-    padding: 1rem;
+    margin: 1rem 0;
+    padding: 1rem 2rem;
     border-radius: 5px;
     background-color:#bab0a4;
     }
@@ -78,7 +93,8 @@ body {
     font-family: articulat-cf,sans-serif;
     font-weight: 400;
     font-style: normal;
-    margin: 1rem;
+    padding-left: 1rem;
+    /* margin: 1rem; */
     color:#8f8981;
     }
     nav ul li a{
@@ -88,15 +104,13 @@ body {
     font-weight: 400;
     font-style: normal;
     text-transform: lowercase;
-    margin: 0.5rem 1rem;
     letter-spacing: 0.05rem;
     }
     nav ul li {
-    display: block;
-    margin: 0.2rem;
-    }
-    nav {
-    padding: 0.5rem;
+        display: block;
+        margin:0;
+        padding:0;
+        margin-right: auto;
     }
     a {
     text-decoration: none;
@@ -148,6 +162,7 @@ body {
     header{
     grid-row: 1/2;
     grid-column: 1/6;
+    margin: 0 1rem;
     }
     main{
     grid-row: 2/4;
@@ -165,11 +180,26 @@ body {
     display: inline-flex;
     flex-wrap: wrap;
     }
+  
     aside {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-column: 1/6;
     }
+
+    .teaser-plain {
+        max-height: 10rem;
+        overflow-x: hidden;
+    }
+
+    .teaser-image, .teaser-plain, .teaser-main{
+        margin: 1rem;
+    }
+
+
+    .article-aside{
+        display:block;
+        }
 }
 @media screen and (min-width: 90rem) {      /* 90REM RESPONSIVE: ASIDE */
     main{
@@ -181,5 +211,135 @@ body {
     grid-row-start: 2; grid-row-end: 4;
     grid-column-start: 5; grid-column-end: 6;
     }
+    .teaser-plain {
+        max-height: 100%;
+    }
 }
-    
+
+/* PHOTO GALLERY: */
+
+.container-gallery {
+    margin: auto;
+    max-width: 80vw;
+}
+
+.gallery {
+    max-width: 35rem;
+    margin: auto;
+}
+
+.gallery-shell {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    background-color: #fff;
+    border-radius: 5px;
+    margin:auto;
+}
+
+.gallery main {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: calc(72% + 3em);
+}
+
+.gallery figure{
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.gallery figure img{
+    min-width: 100%;
+    max-height: 100%;
+    object-fit: scale-down;
+}
+
+.gallery figcaption {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 1rem 0;
+    color: #888;
+}
+
+
+.gallery input:nth-of-type(1):checked ~ main figure:nth-of-type(1),
+input:nth-of-type(2):checked ~ main figure:nth-of-type(2),
+input:nth-of-type(3):checked ~ main figure:nth-of-type(3),
+input:nth-of-type(4):checked ~ main figure:nth-of-type(4),
+input:nth-of-type(5):checked ~ main figure:nth-of-type(5),
+input:nth-of-type(6):checked ~ main figure:nth-of-type(6),
+input:nth-of-type(7):checked ~ main figure:nth-of-type(7),
+input:nth-of-type(8):checked ~ main figure:nth-of-type(8),
+input:nth-of-type(9):checked ~ main figure:nth-of-type(9),
+input:nth-of-type(10):checked ~ main figure:nth-of-type(10){
+    opacity: 1;
+}
+
+.gallery nav {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-gap: 0.25em;
+}
+
+.gallery nav img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+
+.gallery input {
+    display: none;
+}
+
+/* NEWSLETTER SUBSCRIPTION FORM: ------- */
+
+.container-form {
+    margin: auto;
+    max-width: 80%;
+}
+
+form{
+    margin-top: 3rem;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 3rem;
+}
+
+section.form-personal-info ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+form label {
+    font-family: articulat-cf,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    color:#8f8981;
+}
+
+form ul li {
+    margin: 0.5rem;
+}
+
+section.personal-info ul li input[type="text"],
+section ul li input[type="email"],
+section ul li select {
+	flex: 8 0 15rem;
+	box-sizing: border-box;
+}
+
+button {
+    font-family: articulat-cf,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #8f8981;
+    font-size: 12pt;
+    border: none;
+    color: #fff;
+    padding: 0.5rem 0.75rem 0.4rem;
+    border-radius: 4px;
+}
